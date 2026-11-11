@@ -1,0 +1,254 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 578" width="960" height="578" font-family="DejaVu Sans, Arial, sans-serif">
+  <defs>
+    <linearGradient id="pcb" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2f8a50"/><stop offset="1" stop-color="#1f6338"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2a5fb8"/><stop offset="1" stop-color="#1a3f85"/>
+    </linearGradient>
+    <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2f2f2"/><stop offset="0.5" stop-color="#b9bcc0"/><stop offset="1" stop-color="#8d9196"/>
+    </linearGradient>
+    <linearGradient id="metalV" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8d9196"/><stop offset="0.35" stop-color="#eef0f2"/><stop offset="1" stop-color="#7b7f84"/>
+    </linearGradient>
+    <radialGradient id="cap" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#f4f4f4"/><stop offset="1" stop-color="#9a9da1"/>
+    </radialGradient>
+    <linearGradient id="term" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6cc070"/><stop offset="1" stop-color="#3d8b41"/>
+    </linearGradient>
+    <linearGradient id="jst" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf6ea"/><stop offset="1" stop-color="#ddd3bb"/>
+    </linearGradient>
+    <linearGradient id="bat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4a4f57"/><stop offset="1" stop-color="#23262b"/>
+    </linearGradient>
+    <radialGradient id="dome" cx="0.4" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#ffe9a8"/><stop offset="0.45" stop-color="#ffab2e"/><stop offset="1" stop-color="#d9730b"/>
+    </radialGradient>
+    <radialGradient id="knob" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#5a5a5a"/><stop offset="1" stop-color="#111"/>
+    </radialGradient>
+    <radialGradient id="red" cx="0.4" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#ff6b6b"/><stop offset="1" stop-color="#b71c1c"/>
+    </radialGradient>
+    <filter id="sh" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="1.5" dy="2.5" stdDeviation="2" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <rect width="960" height="600" fill="#ffffff"/>
+
+  <!-- ============ PLOKŠTĖ ============ -->
+  <rect x="60" y="40" width="840" height="300" rx="10" fill="url(#pcb)" stroke="#174d2b" stroke-width="2" filter="url(#sh)"/>
+  <g fill="#ffffff" stroke="#d4af37" stroke-width="3">
+    <circle cx="78" cy="58" r="6"/><circle cx="882" cy="58" r="6"/>
+    <circle cx="78" cy="322" r="6"/><circle cx="882" cy="322" r="6"/>
+  </g>
+  <text x="480" y="62" font-size="12" fill="#cfe8d6" text-anchor="middle" letter-spacing="1">VALDIKLIO PLOKŠTĖ</text>
+
+  <!-- DC-DC keitiklis -->
+  <g filter="url(#sh)">
+    <rect x="100" y="75" width="220" height="120" rx="3" fill="url(#blue)" stroke="#123068"/>
+  </g>
+  <g>
+    <circle cx="128" cy="104" r="17" fill="url(#cap)" stroke="#6d7075"/>
+    <path d="M115,93 A17,17 0 0 1 128,87 L128,104 Z" fill="#3b3f46" opacity="0.8"/>
+    <path d="M122,104 h12 M128,98 v12" stroke="#777" stroke-width="1.5"/>
+    <circle cx="128" cy="160" r="17" fill="url(#cap)" stroke="#6d7075"/>
+    <path d="M115,149 A17,17 0 0 1 128,143 L128,160 Z" fill="#3b3f46" opacity="0.8"/>
+    <path d="M122,160 h12 M128,154 v12" stroke="#777" stroke-width="1.5"/>
+    <circle cx="292" cy="104" r="17" fill="url(#cap)" stroke="#6d7075"/>
+    <path d="M279,93 A17,17 0 0 1 292,87 L292,104 Z" fill="#3b3f46" opacity="0.8"/>
+    <path d="M286,104 h12 M292,98 v12" stroke="#777" stroke-width="1.5"/>
+    <circle cx="292" cy="160" r="17" fill="url(#cap)" stroke="#6d7075"/>
+    <path d="M279,149 A17,17 0 0 1 292,143 L292,160 Z" fill="#3b3f46" opacity="0.8"/>
+    <path d="M286,160 h12 M292,154 v12" stroke="#777" stroke-width="1.5"/>
+    <!-- droselis -->
+    <rect x="160" y="86" width="44" height="44" rx="5" fill="#2b2b2b"/>
+    <circle cx="182" cy="108" r="15" fill="#3d3d3d" stroke="#555"/>
+    <text x="182" y="112" font-size="10" fill="#bbb" text-anchor="middle">330</text>
+    <!-- mikroschema -->
+    <g fill="#c9ccd0">
+      <rect x="166" y="170" width="4" height="8"/><rect x="176" y="170" width="4" height="8"/>
+      <rect x="186" y="170" width="4" height="8"/><rect x="196" y="170" width="4" height="8"/>
+    </g>
+    <rect x="160" y="142" width="46" height="30" rx="2" fill="#151515"/>
+    <!-- trimeriai -->
+    <rect x="222" y="90" width="26" height="26" rx="2" fill="#2f6fe0" stroke="#1b4aa5"/>
+    <circle cx="235" cy="103" r="7" fill="#d9b44a"/><line x1="230" y1="108" x2="240" y2="98" stroke="#7a5d10" stroke-width="2"/>
+    <rect x="222" y="136" width="26" height="26" rx="2" fill="#2f6fe0" stroke="#1b4aa5"/>
+    <circle cx="235" cy="149" r="7" fill="#d9b44a"/><line x1="230" y1="154" x2="240" y2="144" stroke="#7a5d10" stroke-width="2"/>
+  </g>
+  <text x="210" y="190" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">DC-DC keitiklis</text>
+
+  <!-- Arduino Nano -->
+  <g filter="url(#sh)">
+    <rect x="350" y="75" width="200" height="120" rx="3" fill="url(#blue)" stroke="#123068"/>
+  </g>
+  <g fill="#d4af37">
+    <rect x="364" y="80" width="7" height="7"/><rect x="376" y="80" width="7" height="7"/><rect x="388" y="80" width="7" height="7"/><rect x="400" y="80" width="7" height="7"/><rect x="412" y="80" width="7" height="7"/><rect x="424" y="80" width="7" height="7"/><rect x="436" y="80" width="7" height="7"/><rect x="448" y="80" width="7" height="7"/><rect x="460" y="80" width="7" height="7"/><rect x="472" y="80" width="7" height="7"/><rect x="484" y="80" width="7" height="7"/><rect x="496" y="80" width="7" height="7"/><rect x="508" y="80" width="7" height="7"/><rect x="520" y="80" width="7" height="7"/><rect x="532" y="80" width="7" height="7"/>
+    <rect x="364" y="183" width="7" height="7"/><rect x="376" y="183" width="7" height="7"/><rect x="388" y="183" width="7" height="7"/><rect x="400" y="183" width="7" height="7"/><rect x="412" y="183" width="7" height="7"/><rect x="424" y="183" width="7" height="7"/><rect x="436" y="183" width="7" height="7"/><rect x="448" y="183" width="7" height="7"/><rect x="460" y="183" width="7" height="7"/><rect x="472" y="183" width="7" height="7"/><rect x="484" y="183" width="7" height="7"/><rect x="496" y="183" width="7" height="7"/><rect x="508" y="183" width="7" height="7"/><rect x="520" y="183" width="7" height="7"/><rect x="532" y="183" width="7" height="7"/>
+  </g>
+  <rect x="338" y="118" width="26" height="34" rx="6" fill="url(#metalV)" stroke="#6b6f74"/>
+  <rect x="343" y="128" width="16" height="14" rx="4" fill="#3a3d42"/>
+  <g transform="rotate(45 465 133)">
+    <rect x="449" y="117" width="32" height="32" fill="#1a1a1a"/>
+    <rect x="445" y="117" width="40" height="32" fill="none" stroke="#c9ccd0" stroke-width="2.5" stroke-dasharray="1.5 2.5"/>
+    <rect x="449" y="113" width="32" height="40" fill="none" stroke="#c9ccd0" stroke-width="2.5" stroke-dasharray="1.5 2.5"/>
+    <circle cx="454" cy="122" r="2" fill="#555"/>
+  </g>
+  <rect x="392" y="104" width="22" height="9" rx="4" fill="url(#metalV)"/>
+  <rect x="512" y="122" width="16" height="16" rx="2" fill="#e8e8e8"/><circle cx="520" cy="130" r="4" fill="#666"/>
+  <circle cx="400" cy="150" r="2.5" fill="#7CFC00"/><circle cx="410" cy="150" r="2.5" fill="#ff5050"/>
+  <text x="450" y="174" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">Arduino Nano</text>
+
+  <!-- SIM800L -->
+  <g filter="url(#sh)">
+    <rect x="580" y="75" width="230" height="120" rx="3" fill="url(#blue)" stroke="#123068"/>
+  </g>
+  <rect x="598" y="86" width="104" height="80" rx="3" fill="url(#metal)" stroke="#7d8186"/>
+  <text x="650" y="104" font-size="11" fill="#333" text-anchor="middle" font-weight="bold">SIM800L</text>
+  <g fill="#222">
+    <rect x="612" y="114" width="26" height="26" fill="#fff"/>
+    <rect x="614" y="116" width="8" height="8"/><rect x="628" y="116" width="8" height="8"/><rect x="614" y="130" width="8" height="8"/>
+    <rect x="624" y="126" width="3" height="3"/><rect x="630" y="132" width="4" height="4"/><rect x="626" y="134" width="2" height="4"/>
+  </g>
+  <g fill="#555" font-size="7"><text x="648" y="124">GSM/GPRS</text><text x="648" y="134">Quad-band</text></g>
+  <rect x="720" y="100" width="54" height="40" rx="2" fill="#30343a" stroke="#555"/>
+  <text x="747" y="124" font-size="8" fill="#aaa" text-anchor="middle">SIM</text>
+  <circle cx="790" cy="94" r="7" fill="#d4af37" stroke="#8a6d16"/><circle cx="790" cy="94" r="2.5" fill="#8a6d16"/>
+  <g fill="#f2d21b" stroke="#a88f0b">
+    <rect x="606" y="176" width="9" height="13"/><rect x="624" y="176" width="9" height="13"/><rect x="642" y="176" width="9" height="13"/><rect x="660" y="176" width="9" height="13"/>
+    <rect x="678" y="176" width="9" height="13"/><rect x="696" y="176" width="9" height="13"/><rect x="714" y="176" width="9" height="13"/><rect x="732" y="176" width="9" height="13"/>
+  </g>
+  <text x="776" y="186" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">GSM</text>
+
+  <!-- Antena -->
+  <path d="M790,94 C840,94 880,100 925,100" fill="none" stroke="#2a2a2a" stroke-width="3"/>
+  <rect x="915" y="18" width="20" height="80" rx="9" fill="#222" stroke="#000"/>
+  <rect x="919" y="24" width="4" height="66" rx="2" fill="#555"/>
+  <text x="925" y="122" font-size="11" fill="#333" text-anchor="middle">GSM</text>
+  <text x="925" y="136" font-size="11" fill="#333" text-anchor="middle">antena</text>
+
+  <!-- ============ GNYBTYNAS ============ -->
+  <g font-size="12" text-anchor="middle" font-weight="bold" fill="#ffffff">
+    <text x="150" y="210">AKUMUL.</text><text x="250" y="210">LED.</text><text x="350" y="210">M.</text>
+  </g>
+  <g stroke="#ffffff" stroke-width="1.5">
+    <line x1="105" y1="215" x2="195" y2="215"/><line x1="205" y1="215" x2="295" y2="215"/><line x1="305" y1="215" x2="395" y2="215"/>
+  </g>
+  <rect x="100" y="221" width="300" height="94" rx="3" fill="url(#term)" stroke="#2d6b30" stroke-width="2" filter="url(#sh)"/>
+  <g stroke="#2d6b30" stroke-width="1.5">
+    <line x1="150" y1="221" x2="150" y2="315"/><line x1="200" y1="221" x2="200" y2="315"/><line x1="250" y1="221" x2="250" y2="315"/><line x1="300" y1="221" x2="300" y2="315"/><line x1="350" y1="221" x2="350" y2="315"/>
+  </g>
+  <rect x="104" y="225" width="292" height="20" fill="#ffffff"/>
+  <g font-size="16" text-anchor="middle" font-weight="bold">
+    <text x="125" y="241" fill="#d32f2f">+</text><text x="175" y="241">−</text>
+    <text x="225" y="241">−</text><text x="275" y="241" fill="#d32f2f">+</text>
+    <text x="325" y="241">−</text><text x="375" y="241" fill="#d32f2f">+</text>
+  </g>
+  <g fill="url(#metal)" stroke="#6b6f74" stroke-width="1.5">
+    <circle cx="125" cy="268" r="13"/><circle cx="175" cy="268" r="13"/><circle cx="225" cy="268" r="13"/>
+    <circle cx="275" cy="268" r="13"/><circle cx="325" cy="268" r="13"/><circle cx="375" cy="268" r="13"/>
+  </g>
+  <g stroke="#555" stroke-width="2.5" stroke-linecap="round">
+    <line x1="118" y1="275" x2="132" y2="261"/><line x1="168" y1="275" x2="182" y2="261"/><line x1="218" y1="275" x2="232" y2="261"/>
+    <line x1="268" y1="275" x2="282" y2="261"/><line x1="318" y1="275" x2="332" y2="261"/><line x1="368" y1="275" x2="382" y2="261"/>
+  </g>
+  <g fill="#1d3d1f">
+    <rect x="114" y="291" width="22" height="18" rx="2"/><rect x="164" y="291" width="22" height="18" rx="2"/><rect x="214" y="291" width="22" height="18" rx="2"/>
+    <rect x="264" y="291" width="22" height="18" rx="2"/><rect x="314" y="291" width="22" height="18" rx="2"/><rect x="364" y="291" width="22" height="18" rx="2"/>
+  </g>
+
+  <!-- ============ BALTOS JUNGTYS ============ -->
+  <rect x="466.0" y="260" width="68" height="48" rx="3" fill="url(#jst)" stroke="#a89f88" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="472.0" y="268" width="56" height="32" rx="2" fill="#e9e1cb" stroke="#b9ae92"/>
+  <rect x="490" y="262" width="20" height="6" fill="#e9e1cb" stroke="#b9ae92"/>
+  <g fill="#d4af37"><rect x="482" y="276" width="6" height="18"/><rect x="497" y="276" width="6" height="18"/><rect x="512" y="276" width="6" height="18"/></g>
+  <text x="500" y="252" font-size="13" text-anchor="middle" font-weight="bold" fill="#ffffff">J1</text>
+  <rect x="622.0" y="260" width="56" height="48" rx="3" fill="url(#jst)" stroke="#a89f88" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="628.0" y="268" width="44" height="32" rx="2" fill="#e9e1cb" stroke="#b9ae92"/>
+  <rect x="640" y="262" width="20" height="6" fill="#e9e1cb" stroke="#b9ae92"/>
+  <g fill="#d4af37"><rect x="638.5" y="276" width="6" height="18"/><rect x="655.5" y="276" width="6" height="18"/></g>
+  <text x="650" y="252" font-size="13" text-anchor="middle" font-weight="bold" fill="#ffffff">J2</text>
+  <rect x="772.0" y="260" width="56" height="48" rx="3" fill="url(#jst)" stroke="#a89f88" stroke-width="1.5" filter="url(#sh)"/>
+  <rect x="778.0" y="268" width="44" height="32" rx="2" fill="#e9e1cb" stroke="#b9ae92"/>
+  <rect x="790" y="262" width="20" height="6" fill="#e9e1cb" stroke="#b9ae92"/>
+  <g fill="#d4af37"><rect x="788.5" y="276" width="6" height="18"/><rect x="805.5" y="276" width="6" height="18"/></g>
+  <text x="800" y="252" font-size="13" text-anchor="middle" font-weight="bold" fill="#ffffff">J3</text>
+
+  <!-- ============ LAIDAI ============ -->
+  <line x1="125" y1="305" x2="125" y2="444" stroke="#c62828" stroke-width="5" stroke-linecap="round"/><line x1="175" y1="305" x2="175" y2="444" stroke="#1b1b1b" stroke-width="5" stroke-linecap="round"/>
+  <line x1="225" y1="305" x2="225" y2="500" stroke="#1b1b1b" stroke-width="3.5" stroke-linecap="round"/><line x1="275" y1="305" x2="275" y2="500" stroke="#c62828" stroke-width="3.5" stroke-linecap="round"/>
+  <line x1="325" y1="305" x2="325" y2="456" stroke="#1b1b1b" stroke-width="4.5" stroke-linecap="round"/><line x1="375" y1="305" x2="375" y2="456" stroke="#c62828" stroke-width="4.5" stroke-linecap="round"/>
+  <line x1="485" y1="305" x2="485" y2="452" stroke="#5a5a5a" stroke-width="3" stroke-linecap="round"/><line x1="500" y1="305" x2="500" y2="452" stroke="#5a5a5a" stroke-width="3" stroke-linecap="round"/><line x1="515" y1="305" x2="515" y2="452" stroke="#5a5a5a" stroke-width="3" stroke-linecap="round"/><line x1="641.5" y1="305" x2="641.5" y2="452" stroke="#5a5a5a" stroke-width="3" stroke-linecap="round"/><line x1="658.5" y1="305" x2="658.5" y2="452" stroke="#5a5a5a" stroke-width="3" stroke-linecap="round"/><line x1="791.5" y1="305" x2="791.5" y2="452" stroke="#5a5a5a" stroke-width="3" stroke-linecap="round"/><line x1="808.5" y1="305" x2="808.5" y2="452" stroke="#5a5a5a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- ============ PRIETAISAI ============ -->
+  <!-- Akumuliatorius -->
+  <g filter="url(#sh)">
+    <rect x="90" y="458" width="120" height="74" rx="5" fill="url(#bat)"/>
+    <rect x="90" y="458" width="120" height="16" rx="5" fill="#5b616b"/>
+  </g>
+  <rect x="115" y="444" width="20" height="16" rx="3" fill="url(#metalV)"/>
+  <rect x="113" y="441" width="24" height="7" rx="2" fill="#c62828"/>
+  <rect x="165" y="444" width="20" height="16" rx="3" fill="url(#metalV)"/>
+  <rect x="163" y="441" width="24" height="7" rx="2" fill="#1b1b1b"/>
+  <text x="125" y="494" font-size="18" fill="#ff6b6b" font-weight="bold" text-anchor="middle">+</text>
+  <text x="175" y="494" font-size="18" fill="#ddd" font-weight="bold" text-anchor="middle">−</text>
+  <rect x="120" y="504" width="60" height="18" rx="2" fill="#30343a" stroke="#666"/>
+  <text x="150" y="517" font-size="9" fill="#bbb" text-anchor="middle">BATTERY</text>
+
+  <!-- Indikacinė lempa -->
+  <path d="M229,500 C229,456 271,456 271,500 Z" fill="url(#dome)" stroke="#b5600a" filter="url(#sh)"/>
+  <path d="M237,490 C237,472 246,466 252,466" fill="none" stroke="#fff6d8" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  <rect x="218" y="499" width="64" height="22" rx="3" fill="#222"/>
+  <rect x="218" y="499" width="64" height="5" fill="#3a3a3a"/>
+  <rect x="222" y="496" width="6" height="6" fill="#d4af37"/><rect x="272" y="496" width="6" height="6" fill="#d4af37"/>
+
+  <!-- Variklis -->
+  <g filter="url(#sh)">
+    <rect x="307" y="460" width="86" height="58" rx="10" fill="url(#metalV)" stroke="#6b6f74"/>
+  </g>
+  <rect x="307" y="460" width="18" height="58" rx="6" fill="#3a3d42"/>
+  <rect x="381" y="466" width="14" height="46" rx="4" fill="#5b5f65"/>
+  <rect x="395" y="484" width="12" height="9" rx="2" fill="url(#metalV)" stroke="#6b6f74"/>
+  <g stroke="#9a9ea3" stroke-width="1"><line x1="329" y1="474" x2="377" y2="474"/><line x1="329" y1="504" x2="377" y2="504"/></g>
+  <rect x="320" y="452" width="10" height="10" fill="#d4af37"/><rect x="370" y="452" width="10" height="10" fill="#d4af37"/>
+
+  <!-- Greičio perjungiklis -->
+  <g filter="url(#sh)"><rect x="455" y="452" width="90" height="80" rx="5" fill="#e6e7e9" stroke="#8d9196"/></g>
+  <g font-size="10" fill="#333" text-anchor="middle" font-weight="bold">
+    <text x="471" y="485">1</text><text x="483" y="473">2</text><text x="500" y="469">3</text><text x="517" y="473">4</text><text x="529" y="485">5</text>
+  </g>
+  <circle cx="500" cy="499" r="20" fill="url(#knob)" stroke="#000"/>
+  <line x1="500" y1="499" x2="500" y2="483" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Testo mygtukas -->
+  <g filter="url(#sh)"><rect x="615" y="452" width="70" height="80" rx="5" fill="#e6e7e9" stroke="#8d9196"/></g>
+  <circle cx="650" cy="494" r="24" fill="url(#knob)"/>
+  <circle cx="650" cy="494" r="16" fill="url(#red)" stroke="#7f0000"/>
+  <ellipse cx="645" cy="488" rx="6" ry="4" fill="#ffb3b3" opacity="0.7"/>
+
+  <!-- Apmokymo tumbleris -->
+  <g filter="url(#sh)"><rect x="765" y="452" width="70" height="80" rx="5" fill="#e6e7e9" stroke="#8d9196"/></g>
+  <text x="800" y="468" font-size="9" fill="#333" text-anchor="middle" font-weight="bold">ON</text>
+  <text x="800" y="528" font-size="9" fill="#333" text-anchor="middle" font-weight="bold">OFF</text>
+  <polygon points="800,478 814,486 814,502 800,510 786,502 786,486" fill="url(#metal)" stroke="#6b6f74"/>
+  <circle cx="800" cy="494" r="8" fill="#8d9196" stroke="#555"/>
+  <line x1="800" y1="494" x2="800" y2="474" stroke="#c9ccd0" stroke-width="7" stroke-linecap="round"/>
+  <line x1="798" y1="492" x2="798" y2="476" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+
+  <!-- ============ PAVADINIMAI ============ -->
+  <g font-size="11" text-anchor="middle" fill="#1a1a1a" font-weight="bold">
+    <text x="150" y="552">Akumuliatorius</text>
+    <text x="250" y="552">Indikacinė</text><text x="250" y="566">lempa</text>
+    <text x="350" y="552">Barstyklės</text><text x="350" y="566">variklis</text>
+    <text x="500" y="552">Greičio</text><text x="500" y="566">perjungiklis</text>
+    <text x="650" y="552">Testo</text><text x="650" y="566">mygtukas</text>
+    <text x="800" y="552">Apmokymo</text><text x="800" y="566">tumbleris</text>
+  </g>
+  <g font-size="10" text-anchor="middle" fill="#777">
+  </g>
+</svg>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="lt" xml:lang="lt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Barstykl��s valdiklio naudojimo instrukcija</title>
+  <style>:root{--g:#1f7a45;--ink:#1d2329;--mut:#5b6670;--line:#e3e7ea}
+*{box-sizing:border-box}
+body{margin:0 auto;max-width:780px;padding:16px 16px 40px;font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:#fff}
+h1{font-size:1.5rem;line-height:1.25;color:var(--g);border-bottom:2px solid var(--g);padding-bottom:6px;margin:6px 0 10px}
+h2{font-size:1.2rem;color:var(--g);margin:26px 0 8px}
+h3{font-size:1.05rem;margin:18px 0 6px}
+img{max-width:100%;height:auto;display:block;margin:8px auto}
+p[align="center"]{display:flex;gap:8px;justify-content:center;align-items:center;flex-wrap:nowrap}
+p[align="center"] img{height:auto;width:30%;margin:0}
+p[align="center"] img:last-child{width:38%}
+table{width:100%;border-collapse:collapse;margin:8px 0 14px;font-size:.95rem}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+th{background:#eef5f1}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;background:#eef4f0;color:#145a32;padding:1px 5px;border-radius:4px;font-size:.92em}
+pre{background:#f1f5f3;border-radius:8px;padding:10px 12px;overflow-x:auto;font-size:.88rem}
+pre code{background:none;padding:0}
+blockquote{margin:10px 0;padding:8px 12px;background:#fff8e6;border-left:4px solid #e8c25a;border-radius:6px}
+blockquote p{margin:2px 0}
+.pdf{display:inline-block;margin:4px 0 10px;padding:9px 16px;background:var(--g);color:#fff;text-decoration:none;border-radius:8px;font-weight:600}
+</style>
+</head>
+<body>
+
+<h1 id="barstyklės-valdiklio-naudojimo-instrukcija">Barstyklės valdiklio
+naudojimo instrukcija</h1>
+<a class="pdf" href="naudojimo_instrukcija.pdf">Atsisiųsti PDF</a>
+<p>Valdiklis barsto pašarą SMS komanda arba mygtuku. Barstomas kiekis
+nustatomas vieną kartą kalibruojant (apmokymo tumbleriu), o vėliau
+galima barstyti pusę, pilną, pusantros ar dvigubą normą.</p>
+<h2 id="valdiklis">Valdiklis</h2>
+<p align="center">
+<img src="img/barstykle_1.jpg" alt="Priekinė panelė" height="240">
+<img src="img/barstykle_2.jpg" alt="Galinė pusė su antena" height="240">
+<img src="img/barstykle_3.jpg" alt="Valdiklis iš vidaus" height="240">
+</p>
+
+<p><strong>Priekinė panelė:</strong> apmokymo tumbleris („Normos
+apmokymas“), barstymo greičio perjungiklis (1–5) ir laidų įvadas.
+<strong>Galinė pusė:</strong> GSM antena. <strong>Vidus:</strong> žalias
+gnybtynas laidams ir baltos jungtys valdymo elementams (žr. 1
+skyrių).</p>
+<h2 id="1-laidų-pajungimas">1. Laidų pajungimas</h2>
+<p><img src="img/pajungimas.svg" alt="Laidų pajungimo schema" /></p>
+<p>Žalias gnybtynas, gnybtai skaičiuojami <strong>iš
+kairės</strong>:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Gnybtas</th>
+<th>Ką jungti</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1 <code>+</code></td>
+<td>Akumuliatoriaus pliusas (12 V)</td>
+</tr>
+<tr class="even">
+<td>2 <code>−</code></td>
+<td>Akumuliatoriaus minusas</td>
+</tr>
+<tr class="odd">
+<td>3 <code>−</code></td>
+<td>Indikacinės lempos minusas</td>
+</tr>
+<tr class="even">
+<td>4 <code>+</code></td>
+<td>Indikacinės lempos pliusas</td>
+</tr>
+<tr class="odd">
+<td>5 <code>−</code></td>
+<td>Variklio minusas</td>
+</tr>
+<tr class="even">
+<td>6 <code>+</code></td>
+<td>Variklio pliusas</td>
+</tr>
+</tbody>
+</table>
+<p>Baltos jungtys, <strong>iš kairės</strong>:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Jungtis</th>
+<th>Ką jungti</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>J1 (3 kontaktai)</td>
+<td>Greičio perjungiklis</td>
+</tr>
+<tr class="even">
+<td>J2</td>
+<td>Testo mygtukas</td>
+</tr>
+<tr class="odd">
+<td>J3</td>
+<td>Apmokymo tumbleris</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li>Visus laidus junkite <strong>išjungę maitinimą</strong>.</li>
+<li>Prisukite GSM anteną ir įdėkite SIM kortelę (<strong>be PIN
+kodo</strong>).</li>
+<li>Prijunkite lempą, variklį ir valdymo elementus.</li>
+<li>Akumuliatorių junkite <strong>paskutinį</strong>, tiksliai pagal
+<code>+</code> ir <code>−</code>.</li>
+</ol>
+<p>Jei variklis sukasi ne į tą pusę, sukeiskite vietomis abu
+<code>M.</code> laidus.</p>
+<h2 id="2-įjungimas">2. Įjungimas</h2>
+<p>Įjungus maitinimą valdiklis per ~1 min. prisijungia prie GSM tinklo.
+Jei telefonas jau užregistruotas, ateina SMS <strong>„Pasileido sms
+valdiklis“</strong>.</p>
+<p>Jei SIM kortelės nėra, įjungtas PIN kodas ar GSM modulis neatsako,
+valdiklis po ~1 min. pats persikrauna ir bando iš naujo. Laikinas
+sutrikimas praeina savaime.</p>
+<h2 id="3-registracija-vieną-kartą">3. Registracija (vieną kartą)</h2>
+<ol type="1">
+<li><p>Įjunkite valdiklį ir palaukite ~1 min., kol prisijungs prie
+tinklo.</p></li>
+<li><p>Iš savo telefono nusiųskite SMS:
+<strong><code>Reg</code></strong></p></li>
+<li><p>Po ~10 s gausite <strong>patvirtinimo SMS</strong>, kad
+registracija pavyko. Jame pateikiamas ir <strong>visų SMS komandų
+sąrašas</strong>:</p>
+<pre><code>Registracija sekminga!
+
+SMS komandos:
+Reg
+Restart
+Info
+Norma_05
+Norma_1
+Norma_15
+Norma_2
+Clear
+
+Sekmingo naudojimo !</code></pre></li>
+</ol>
+<p>Valdiklis vykdo komandas <strong>tik iš užregistruoto
+numerio</strong>. Kitų numerių SMS ignoruojamos ir neatsakomos.</p>
+<p>Norite valdyti kitu telefonu? Nusiųskite <code>Reg</code> iš naujo
+telefono: valdiklis persiregistruos ir toliau klausys tik jo.</p>
+<h2 id="4-barstymo-greitis">4. Barstymo greitis</h2>
+<p>Greitis nustatomas <strong>perjungikliu su 5
+pozicijomis</strong>:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Pozicija</th>
+<th>Variklio greitis</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>40 %</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>50 %</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>60 %</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>80 %</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>100 %</td>
+</tr>
+</tbody>
+</table>
+<p>Paleistas variklis sklandžiai įsibėgėja iki nustatyto greičio, o
+sustabdomas taip pat sklandžiai sulėtėja (~1 s).</p>
+<p>Valdiklis barsto <strong>pagal laiką</strong>, o išbarstomas kiekis
+priklauso nuo greičio. Todėl:</p>
+<ul>
+<li><strong>barstykite ta pačia perjungiklio pozicija, kuria darėte
+kalibraciją</strong>;</li>
+<li>pakeitus poziciją, normos kiekis pasikeis, tad reikės kalibruoti iš
+naujo;</li>
+<li>poziciją keiskite tik kai variklis stovi. Barstant pasukus
+perjungiklį žemyn, variklis nesulėtėja.</li>
+</ul>
+<h2 id="5-kalibracija-apmokymas">5. Kalibracija (apmokymas)</h2>
+<p>Kalibracija nustato, kiek laiko barstyti <strong>pilną
+normą</strong>.</p>
+<ol type="1">
+<li>Perjungikliu nustatykite norimą barstymo greitį.</li>
+<li>Įjunkite <strong>apmokymo tumblerį</strong>. Iškart užsidega lempa,
+po 4 s pradeda suktis variklis.</li>
+<li>Kai išbarstomas jūsų norimas kiekis, <strong>išjunkite
+tumblerį</strong>. Variklis iškart sklandžiai sustoja. Laikas, kiek
+sukosi variklis, tampa pilna norma (<code>Norma_1</code>).</li>
+<li>Gausite SMS <strong>„Pilna norma isbarstyta“</strong> su išmatuotu
+laiku milisekundėmis.</li>
+<li>Lempa užgęsta po 4 s.</li>
+</ol>
+<p>Laikas išsaugomas ir <strong>nedingsta išjungus
+maitinimą</strong>.</p>
+<blockquote>
+<p><strong>Tumbleris įjungtas trumpiau nei 4 s:</strong> variklis
+nepasileidžia, SMS neateina, o pilna norma nustatoma <strong>20
+s</strong>. Lempa užgęsta po 4 s. Norėdami tikslios normos, kalibruokite
+iš naujo.</p>
+</blockquote>
+<h2 id="6-barstymas">6. Barstymas</h2>
+<h3 id="sms-komanda">SMS komanda</h3>
+<table>
+<thead>
+<tr class="header">
+<th>SMS</th>
+<th>Kiek barstoma</th>
+<th>Pvz., kai pilna norma 30 s</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>Norma_05</code></td>
+<td>pusė normos</td>
+<td>15 s</td>
+</tr>
+<tr class="even">
+<td><code>Norma_1</code></td>
+<td>pilna norma</td>
+<td>30 s</td>
+</tr>
+<tr class="odd">
+<td><code>Norma_15</code></td>
+<td>pusantros normos</td>
+<td>45 s</td>
+</tr>
+<tr class="even">
+<td><code>Norma_2</code></td>
+<td>dviguba norma</td>
+<td>60 s</td>
+</tr>
+</tbody>
+</table>
+<p>Kaip vyksta barstymas:</p>
+<ol type="1">
+<li>Iškart gausite SMS, pvz. <strong>„Pilna norma barstoma...“</strong>
+su akumuliatoriaus įtampa (<code>Bat</code>) ir ryšio stiprumu
+(<code>Sig</code>).</li>
+<li>Užsidega lempa, po 4 s pradeda suktis variklis.</li>
+<li>Praėjus normos laikui, variklis sklandžiai sustoja, ir tik tada
+ateina SMS, pvz. <strong>„Pilna norma isbarstyta“</strong> su barstymo
+laiku.</li>
+<li>Lempa užgęsta po 4 s.</li>
+</ol>
+<h3 id="testo-mygtukas">Testo mygtukas</h3>
+<p>Paspaudus <strong>testo mygtuką</strong> išbarstoma <strong>pilna
+norma</strong>, kaip su <code>Norma_1</code>. Pradžioje SMS neateina, o
+baigus ateina „Pilna norma isbarstyta“.</p>
+<h3 id="kol-vyksta-barstymas">Kol vyksta barstymas</h3>
+<p>Nuo užsidegusios lempos iki variklio sustojimo (taip pat kalibruojant
+tumbleriu):</p>
+<ul>
+<li><strong>visos SMS komandos</strong> (<code>Norma_*</code>,
+<code>Info</code>, <code>Restart</code>, <code>Clear</code>,
+<code>Reg</code>) ir testo mygtukas <strong>ignoruojami</strong>:
+nevykdomi ir neatsakomi;</li>
+<li>ignoruotos komandos <strong>vėliau neįvykdomos</strong>. Jei reikia,
+siųskite jas iš naujo, gavę SMS „… isbarstyta“.</li>
+</ul>
+<h2 id="7-kitos-komandos">7. Kitos komandos</h2>
+<table>
+<thead>
+<tr class="header">
+<th>SMS</th>
+<th>Ką daro</th>
+<th>Atsakymas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>Info</code></td>
+<td>Pasako akumuliatoriaus įtampą ir ryšio stiprumą</td>
+<td><code>Info:</code> / <code>Bat: 12.650 V</code> /
+<code>Sig: -71 dBm</code></td>
+</tr>
+<tr class="even">
+<td><code>Restart</code></td>
+<td>Perkrauna valdiklį</td>
+<td>„Restartuoja sms valdiklis ...“, po ~1 min. „Pasileido sms
+valdiklis“</td>
+</tr>
+<tr class="odd">
+<td><code>Clear</code></td>
+<td>Ištrina užregistruotą numerį</td>
+<td>„Numeris istrintas is atminties!“ Po to reikės vėl
+<code>Reg</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="kaip-suprasti-bat-ir-sig-orientacinės-reikšmės">Kaip suprasti
+<code>Bat</code> ir <code>Sig</code> (orientacinės reikšmės)</h3>
+<table>
+<thead>
+<tr class="header">
+<th><code>Bat</code> (12 V švino akumuliatorius)</th>
+<th>Būklė</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>12,6 V ir daugiau</td>
+<td>Pilnas</td>
+</tr>
+<tr class="even">
+<td>~12,2 V</td>
+<td>Pusiau iškrautas</td>
+</tr>
+<tr class="odd">
+<td>11,8 V ir mažiau</td>
+<td>Reikia krauti</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th><code>Sig</code></th>
+<th>Ryšys</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>nuo −51 iki −75 dBm</td>
+<td>Geras</td>
+</tr>
+<tr class="even">
+<td>nuo −77 iki −93 dBm</td>
+<td>Vidutinis</td>
+</tr>
+<tr class="odd">
+<td>−95 dBm ir silpniau</td>
+<td>Silpnas, SMS gali vėluoti</td>
+</tr>
+<tr class="even">
+<td><code>Unknown</code></td>
+<td>Nėra tinklo</td>
+</tr>
+</tbody>
+</table>
+<h2 id="8-automatinis-restartas">8. Automatinis restartas</h2>
+<p>Valdiklis <strong>kas 24 valandas</strong> pats persikrauna, kad GSM
+modulis neužstrigtų. Tai normalu.</p>
+<p>Restarto metu gausite dvi SMS:</p>
+<ol type="1">
+<li>„Restartuoja sms valdiklis ...“ – prieš perkrovimą;</li>
+<li>„Pasileido sms valdiklis“ – po ~1 min., kai valdiklis vėl
+prisijungia prie tinklo.</li>
+</ol>
+<p>Jei restarto laikas sutampa su barstymu, valdiklis <strong>palaukia,
+kol barstymas baigsis</strong>. Tada SMS ateina tokia tvarka: „…
+isbarstyta“, „Restartuoja sms valdiklis ...“, „Pasileido sms
+valdiklis“.</p>
+<p>24 valandos skaičiuojamos nuo paskutinio įjungimo, todėl restarto
+laikas pasislenka, jei valdiklį išjungėte arba perkrovėte komanda
+<code>Restart</code>.</p>
+<h2 id="9-energijos-taupymas">9. Energijos taupymas</h2>
+<p>Ramybės būsenoje valdiklis naudoja <strong>~26–29 mA</strong> (~0,7
+Ah per parą): GSM modulis miega ir pabunda tik gavęs SMS, procesorius
+laukimo metu taip pat miega.</p>
+<p>Multimetru matuojama srovė nuolat šiek tiek kinta – tai normalu.</p>
+<h2 id="svarbu">Svarbu</h2>
+<ul>
+<li>Komandas rašykite <strong>tiksliai taip</strong>, kaip parašyta:
+didžiosios ir mažosios raidės, apatinis brūkšnys, be tarpų.</li>
+<li><strong>Kitą komandą siųskite tik gavę atsakymą į
+ankstesnę</strong>, kitaip ji gali dingti.</li>
+<li><strong>Barstymo metu komandų nesiųskite</strong> – jos
+ignoruojamos.</li>
+<li>Jei valdikliui buvo <strong>atnaujinta programa</strong>,
+<strong>pakalibruokite iš naujo</strong> – senoji kalibracija duos
+mažesnį kiekį.</li>
+<li>Neatsako? Nusiųskite <code>Info</code>. Jei ir tada neatsako,
+išjunkite ir vėl įjunkite maitinimą.</li>
+</ul>
+</body>
+</html>
