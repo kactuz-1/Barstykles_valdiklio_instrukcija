@@ -1,0 +1,26 @@
+Barstyklės valdiklio naudojimo instrukcija
+==========================================
+
+Vieša nuoroda (QR kodas veda čia):
+https://kactuz-1.github.io/Barstykles_valdiklio_instrukcija/
+
+PDF:
+https://kactuz-1.github.io/Barstykles_valdiklio_instrukcija/naudojimo_instrukcija.pdf
+
+QR kodas: qr_instrukcija.png
+Spausdinti ne mažesnį nei 2 x 2 cm.
+
+Talpinimas: GitHub Pages, repozitorija kactuz-1/Barstykles_valdiklio_instrukcija
+(vieša, šaka main, aplankas / root).
+
+QR nustos veikti, jei:
+- pervadinsite repozitoriją Barstykles_valdiklio_instrukcija;
+- pakeisite GitHub vartotojo vardą kactuz-1;
+- padarysite repozitoriją privačią arba ją ištrinsite;
+- išjungsite GitHub Pages.
+
+Atnaujinant instrukciją pakeiskite index.html ir naudojimo_instrukcija.pdf -
+nuoroda ir QR lieka tie patys.
+
+Šaltinis: Barstykle_P_0010_su_registracija,
+P_0010_su_registracija_su_energijos_taupymu_26ma_v2/instrukcija/
